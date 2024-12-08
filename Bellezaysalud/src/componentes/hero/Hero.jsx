@@ -2,7 +2,7 @@ import "./hero.css";
 
 function Hero() {
   return (
-    <hero>
+    <body>
       <section>
         <p>section 1</p>
       </section>
@@ -12,7 +12,7 @@ function Hero() {
       <section>
         <p>section 1</p>
       </section>
-    </hero>
+    </body>
   );
 }
 
