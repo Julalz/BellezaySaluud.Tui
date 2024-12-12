@@ -1,14 +1,17 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #555555;
+@font-face {
+  font-family: "Careny";
+  src: url("../public/fonts/Careny.ttf") format("truetype");
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
-html,
-body {
-  height: 100%;
-  margin: 0;
+
+:root {
+  font-family: "Careny", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  /* letter-spacing: 2px; */
+  /* font-weight: 400; */
+
+  /* color-scheme: light dark; */
+  color: rgba(138, 118, 93, 0.87);
+  background-color: rgb(245, 231, 214);
 }

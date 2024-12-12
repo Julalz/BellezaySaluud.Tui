@@ -5,7 +5,7 @@
   align-items: center;
   height: 100px;
   padding-top: auto;
-  background-color: rgb(253, 219, 174);
+  background-color: rgb(252, 234, 213);
   color: black;
   position: relative;
   z-index: 100;
@@ -84,7 +84,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.911);
   z-index: 100;
   transition: all 0.9s ease-in-out;
 }
