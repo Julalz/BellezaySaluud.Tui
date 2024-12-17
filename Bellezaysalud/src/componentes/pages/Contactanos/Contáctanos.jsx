@@ -1,5 +1,11 @@
+import Header from "../../header/Header";
+
 function Contactanos() {
-  return;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Contactanos;

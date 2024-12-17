@@ -1,5 +1,13 @@
+import Header from "../../header/Header";
+
+import "./services.css";
+
 function Services() {
-  return;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Services;

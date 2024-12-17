@@ -1,5 +1,11 @@
+import Header from "../../header/Header";
+
 function Donde_estamos() {
-  return;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Donde_estamos;

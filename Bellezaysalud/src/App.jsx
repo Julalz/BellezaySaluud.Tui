@@ -3,6 +3,8 @@ import Home from "./componentes/pages/Home/Home";
 import Services from "./componentes/pages/Servicios/Services";
 import Donde_estamos from "./componentes/pages/Donde_estamos/Donde_estamos";
 import Contactanos from "./componentes/pages/Contactanos/Contáctanos";
+import Conocenos from "./componentes/pages/Conocenos/Conocenos";
+
 import "./styles/App.css";
 
 function App() {
@@ -10,9 +12,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Servicios" element={<Services />} />
-        <Route path="/Servicios" element={<Contactanos />} />
-        <Route path="/Servicios" element={<Donde_estamos />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contactanos" element={<Contactanos />} />
+        <Route path="/donde-estamos" element={<Donde_estamos />} />
+        <Route path="/conocenos" element={<Conocenos />} />
       </Routes>
     </Router>
   );

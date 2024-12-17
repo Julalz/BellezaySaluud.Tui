@@ -42,7 +42,7 @@ function Header() {
             <Link to="/">Inicio</Link>
           </li>
           <li>
-            <Link to="/servicios">Servicios</Link>
+            <Link to="/services">Servicios</Link>
           </li>
           <li>
             <Link to="/conocenos">Conócenos</Link>
@@ -51,7 +51,9 @@ function Header() {
             <Link to="/contactanos">Contáctanos</Link>
           </li>
           <li>
-            <Link to="/reservar-cita">Reserva tu cita</Link>
+            <Link to="https://www.treatwell.es/establecimiento/belleza-y-salud-salon-de-belleza/">
+              Reserva tu cita
+            </Link>
           </li>
         </ul>
       </nav>
