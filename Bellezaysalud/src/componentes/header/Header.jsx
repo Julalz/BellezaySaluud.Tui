@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,11 +38,21 @@ function Header() {
 
       <nav>
         <ul className={`ul-header-container ${isMenuOpen ? "open" : ""}`}>
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Conócenos</li>
-          <li>Contáctanos</li>
-          <li>Reservar cita</li>
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/servicios">Servicios</Link>
+          </li>
+          <li>
+            <Link to="/conocenos">Conócenos</Link>
+          </li>
+          <li>
+            <Link to="/contactanos">Contáctanos</Link>
+          </li>
+          <li>
+            <Link to="/reservar-cita">Reserva tu cita</Link>
+          </li>
         </ul>
       </nav>
     </header>
