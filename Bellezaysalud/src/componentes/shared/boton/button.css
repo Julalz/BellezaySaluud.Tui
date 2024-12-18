@@ -5,7 +5,7 @@
   font-size: 16px;
   letter-spacing: 0.7px;
   color: #fff;
-  background: rgba(43, 97, 41, 0.63);
+  background: #abae8d;
   border: none;
   border-radius: 30px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -14,8 +14,8 @@
 }
 
 .button-shared:hover {
-  background: rgba(43, 97, 41, 0.9);
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  background: #a3a77cc2;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button-shared:active {
