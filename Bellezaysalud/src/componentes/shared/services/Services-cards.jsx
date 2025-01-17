@@ -6,7 +6,7 @@ function ServicesCards({cardTitle ,cardAlt, cardImg}) {
             <div className="card">
                 <div className="card-body">
                     <img className="card-img-services" src={cardImg} alt="" />
-                    <h5 className="card-title">{cardTitle}</h5>
+                    <h6 className="card-title">{cardTitle}</h6>
                     {/* <a href="#" className="btn btn-primary">Reserva tu cita</a> */}
                 </div>
             </div>

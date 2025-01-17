@@ -5,9 +5,10 @@
   align-items: center;
   height: 100px;
   padding-top: auto;
-  background-color: rgb(252, 234, 213);
+  background-color: rgb(255, 244, 231);
   color: black;
   position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.024);
   z-index: 100;
 }
 
