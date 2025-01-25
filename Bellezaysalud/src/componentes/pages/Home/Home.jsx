@@ -7,6 +7,7 @@ import img2 from "../../../../public/img/anniversary (Post de Instagram) (2).png
 import img3 from "../../../../public/img/anniversary (Post de Instagram) (1).png";
 
 import "./home.css";
+
 function Home() {
   return (
     <body>
