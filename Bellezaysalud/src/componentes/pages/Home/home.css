@@ -4,60 +4,102 @@ h1 {
   padding: 10px 10px 0px 10px;
   font-size: 30px;
 }
-p {
+/* p {
   font-size: 25px;
   font-weight: 590;
-}
+} */
 
 /* section2 */
-
+.body-container2 {
+  margin-top: 45px;
+}
 .body-container2 h2 {
   margin-top: 55px;
 }
-.text-section2 {
-  font-size: 30px;
+.div-confianza-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-confianza-section2 h2 {
+  font-size: 70px;
+  margin: 15px;
+}
+.div-confianza-section2 p {
+  font-family: "bon-vivant-regular";
+  font-size: 50px;
   text-align: center;
-  overflow: hidden;
-  padding: 10px 10px 0px 10px;
+  margin: -25px;
+}
+.vertical-line {
+  border-left: 1px solid rgba(107, 92, 73, 0.87);
+  height: 100px;
+  margin: 0 20px 15px;
 }
 
-.who-is-mila-container,
-.who-is-mila-container4 {
+.text-vertical-mila {
+  writing-mode: vertical-lr;
+  font-size: 45px;
+  text-align: center;
+  margin-left: -15px;
+  width: 1px;
+}
+
+.who-is-mila-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin: 10px;
-  padding: 30px;
-  height: 700px;
-  background-color: transparent;
+  position: relative;
+  text-align: center;
+}
+.who-is-mila-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -25px;
+}
+.who-is-mila-container p:nth-of-type(1) {
+  font-size: 35px;
+  text-align: center;
+  width: 500px;
+  margin: -15px 0px 0px 0px;
 }
 
-.who-is-mila-container div {
+.who-is-mila-container div p:nth-of-type(1) > span {
+  font-family: "bon-vivant-regular";
+  font-size: 37px;
+  text-align: center;
+}
+.who-is-mila-container div p:nth-of-type(2) {
+  font-size: 22px;
+  width: 300px;
+  text-align: center;
+  /* padding: 0px 55px 0px 55px; */
+}
+
+/* .who-is-mila-container div {
   width: 50%;
   padding-right: 25px;
   font-size: 35px;
   text-align: center;
   margin: 0;
   background-color: transparent;
-}
+} */
 
-.who-is-mila-container img,
-.who-is-mila-container3 img,
-.who-is-mila-container4 img {
-  border-radius: 25px;
+.who-is-mila-container img {
   filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.6));
-  width: 32%;
-  height: auto;
   object-fit: cover;
   display: block;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  /* object-fit: cover; */
 }
 /* section3 */
-.body-container3,
-.body-container4 {
-  margin-top: -280px;
-}
+
 .who-is-mila-container3 {
   display: flex;
   flex-direction: row-reverse;
@@ -109,9 +151,7 @@ p {
     text-align: center;
   }
 
-  .who-is-mila-container,
-  .who-is-mila-container3,
-  .who-is-mila-container4 {
+  .who-is-mila-container {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -119,18 +159,20 @@ p {
   .body-container4 {
     margin-bottom: 200px;
   }
-  .who-is-mila-container img,
-  .who-is-mila-container3 img,
-  .who-is-mila-container4 img {
+  .who-is-mila-container img {
     width: 300px;
     height: auto;
     object-fit: cover;
   }
 
-  .who-is-mila-container p,
-  .who-is-mila-container3 p,
-  .who-is-mila-container4 p {
+  .who-is-mila-container p {
     margin-top: 10px;
     font-size: 20px;
+  }
+
+  .div-confianza-section2 h2 {
+    font-size: 70px;
+    margin: 15px;
+    text-align: center;
   }
 }

@@ -13,6 +13,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "bon-vivant-regular";
+  src: url("../public/fonts/bon-vivant_freefontdownload_org/bon-vivant.ttf")
+    format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   font-family: "bon-vivant-bold", Inter, system-ui, Avenir, Helvetica, Arial,
