@@ -14,7 +14,7 @@ import img2 from "../../../../public/img/anniversary (Post de Instagram) (2).png
 import img3 from "../../../../public/img/anniversary (Post de Instagram) (1).png";
 
 import "./home.css";
-
+import { Pagination } from "swiper/modules";
 function Home() {
   return (
     <body>
@@ -111,24 +111,52 @@ function Home() {
       <div className="horizontal-line"></div>
       <div className="body-container4">
         <h2>Buscas algún producto en especial</h2>
-        <Swiper navigation={true} parallax={true}>
-          <SwiperSlide>
-            <ServicesCards
-              cardImg={img1}
-              cardTitle={"Extensiones de Pestañas"}
-            />
-            <ServicesCards
-              cardImg={img1}
-              cardTitle={"Extensiones de Pestañas"}
-            />
-            <ServicesCards
-              cardImg={img1}
-              cardTitle={"Extensiones de Pestañas"}
-            />
-          </SwiperSlide>
-        </Swiper>
       </div>
 
+      <Swiper
+        loop={true}
+        autoplay={true}
+        pagination={true}
+        modules={[Pagination]}
+        slidesPerView={4}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <ServicesCards
+            cardImg={img1}
+            cardTitle={"Uñas"}
+            cardText={"esto es una prueba"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCards
+            cardImg={img1}
+            cardTitle={"Uñas"}
+            cardText={"esto es una prueba"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCards
+            cardImg={img1}
+            cardTitle={"Uñas"}
+            cardText={"esto es una prueba"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCards
+            cardImg={img1}
+            cardTitle={"Uñas"}
+            cardText={"esto es una prueba"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCards
+            cardImg={img1}
+            cardTitle={"Uñas"}
+            cardText={"esto es una prueba"}
+          />
+        </SwiperSlide>
+      </Swiper>
       <Footer />
     </body>
   );
