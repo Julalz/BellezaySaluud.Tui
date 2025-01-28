@@ -2,19 +2,14 @@ import Header from "../../header/Header";
 import Footer from "../../footer/Footer";
 import Cards from "../../shared/Cards/Cards";
 import Button from "../../shared/boton/button";
-import ServicesCards from "../../shared/services/services-cards";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-import img1 from "../../../../public/img/VITAMINAS_POST.png";
-import img2 from "../../../../public/img/anniversary (Post de Instagram) (2).png";
-import img3 from "../../../../public/img/anniversary (Post de Instagram) (1).png";
-
+import Swipeer from "../../swiper/Slider";
+import images from "../../../importaciones/images";
 import "./home.css";
-import { Pagination } from "swiper/modules";
+
 function Home() {
   return (
     <body>
@@ -22,29 +17,29 @@ function Home() {
       <section className="body-container1">
         <h1>Servicios más destacados en Nuestro centro de estetica en Tui</h1>
         <div className="body_elements">
-          <Cards text="Vitaminas" img={img1} alt="Vitaminas" />
+          <Cards text="Vitaminas" img={images[2].img} alt={images[2].alt} />
           <Cards
             text={"Extensiones de Pestañas"}
-            img={img3}
-            alt={"Extensiones de Pestañas"}
+            img={images[1].img}
+            alt={images[1].alt}
           />
 
           <Cards
             text={"Corporal detox indiba"}
-            img={img2}
-            alt={"corporal detox"}
+            img={images[0].img}
+            alt={images[0].alt}
           />
 
           <Cards
             text={"Corporal detox indiba"}
-            img={img2}
-            alt={"corporal detox"}
+            img={images[0].img}
+            alt={images[0].alt}
           />
 
           <Cards
             text={"Corporal detox indiba"}
-            img={img2}
-            alt={"corporal detox"}
+            img={images[0].img}
+            alt={images[0].alt}
           />
         </div>
       </section>
@@ -65,12 +60,12 @@ function Home() {
             <img
               src="../../../../public/img/Mila.png"
               alt="Mila Belleza y Salud"
-            ></img>
+            />
             <p className="text-vertical-mila">Mila Covelo</p>
           </div>
           <div>
             <p>
-              Da el primer paso hacia una experiencia de belleza única <br></br>
+              Da el primer paso hacia una experiencia de belleza única <br />
               <span>no esperes más</span>
             </p>
             <p>
@@ -97,14 +92,14 @@ function Home() {
             className="Higiene-facial"
             src="../../../../public/img/DSC02675.jpg"
             alt="Higiene facial"
-          ></img>
+          />
         </div>
         <div>
           <img
             className="img-container3"
             src="../../../../public/img/DSC02748.png"
             alt="30 años de Belleza y Salud"
-          ></img>
+          />
           <Button text={"Conocenos"} url={"/conocenos"} />
         </div>
       </section>
@@ -113,59 +108,8 @@ function Home() {
         <h2>Buscas algún producto en especial</h2>
       </div>
 
-    
-    <Swiper
-  loop={true}
-  autoplay={true}
-  pagination={true}
-  modules={[Pagination]}
-  slidesPerView={1} 
-  breakpoints={{
-    640: {
-      slidesPerView: 1, 
-    },
-    1024: {
-      slidesPerView: 4, 
-    },
-  }}
-  className="mySwiper"
->
-        <SwiperSlide>
-          <ServicesCards
-            cardImg={img1}
-            cardTitle={"Uñas"}
-            cardText={"esto es una prueba"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServicesCards
-            cardImg={img1}
-            cardTitle={"Uñas"}
-            cardText={"esto es una prueba"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServicesCards
-            cardImg={img1}
-            cardTitle={"Uñas"}
-            cardText={"esto es una prueba"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServicesCards
-            cardImg={img1}
-            cardTitle={"Uñas"}
-            cardText={"esto es una prueba"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ServicesCards
-            cardImg={img1}
-            cardTitle={"Uñas"}
-            cardText={"esto es una prueba"}
-          />
-        </SwiperSlide>
-      </Swiper>
+      <Swipeer images={images} />
+
       <Footer />
     </body>
   );
