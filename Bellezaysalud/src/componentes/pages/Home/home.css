@@ -292,16 +292,22 @@ h1 {
   }
 
   .swiper {
-    height: 250px; /* Ajusta la altura en pantallas más pequeñas */
-  }
+    height: auto; 
 
   .swiper-slide {
-    height: auto; /* Deja que la altura de las diapositivas se ajuste automáticamente */
+    width: 100%; 
+    
   }
 
   .swiper-slide img {
-    background-color: aqua;
-    height: 100%;
-    flex-direction: row;
+    width: 100%; 
+    height: auto; 
   }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+  }
+  
 }

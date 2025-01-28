@@ -23,10 +23,11 @@
 
 @media (max-width: 768px) {
     .card-body{
-        width: 110%
+        width: 200px
     }
     .card-title{
         display: none;
+        
     }
     .card-img-services{
         object-fit: cover;

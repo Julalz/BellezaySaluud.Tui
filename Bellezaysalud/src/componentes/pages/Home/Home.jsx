@@ -113,14 +113,23 @@ function Home() {
         <h2>Buscas algún producto en especial</h2>
       </div>
 
-      <Swiper
-        loop={true}
-        autoplay={true}
-        pagination={true}
-        modules={[Pagination]}
-        slidesPerView={4}
-        className="mySwiper"
-      >
+    
+    <Swiper
+  loop={true}
+  autoplay={true}
+  pagination={true}
+  modules={[Pagination]}
+  slidesPerView={1} 
+  breakpoints={{
+    640: {
+      slidesPerView: 1, 
+    },
+    1024: {
+      slidesPerView: 4, 
+    },
+  }}
+  className="mySwiper"
+>
         <SwiperSlide>
           <ServicesCards
             cardImg={img1}
